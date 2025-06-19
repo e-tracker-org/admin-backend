@@ -1,6 +1,7 @@
 // @ts-nocheck
 import { useEffect, useState } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router";
+import {  Routes, Route } from "react-router-dom"; // ✅ FIXED
+
 import SignIn from "./pages/AuthPages/SignIn";
 // import SignUp from "./pages/AuthPages/SignUp";
 import NotFound from "./pages/OtherPage/NotFound";
@@ -58,8 +59,8 @@ export default function App() {
 
   return (
     <>
-      <Router>
-        <ScrollToTop />
+      {/* <Router> */}
+        
         <Routes>
           {/* Dashboard Layout */}
           <Route element={<AppLayout />}>
@@ -114,7 +115,6 @@ export default function App() {
           {/* Fallback Route */}
           <Route path="*" element={<NotFound />} />
         </Routes>
-      </Router>
     </>
   );
 }

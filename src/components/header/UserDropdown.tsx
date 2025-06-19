@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { DropdownItem } from "../ui/dropdown/DropdownItem";
 import { Dropdown } from "../ui/dropdown/Dropdown";
-// import { Link } from "react-router";
+// import { Link } from "react-router-dom";
 import { removeUserSession } from "../../config/config";
 
 export default function UserDropdown() {

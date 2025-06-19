@@ -10,7 +10,7 @@ import { ThemeProvider } from "./context/ThemeContext.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <BrowserRouter basename={import.meta.env.BASE_URL}> {/* ✅ Router must wrap everything using useLocation() */}
+    <BrowserRouter basename={import.meta.env.BASE_URL}> 
       <ThemeProvider>
         <AppWrapper>
           <App />

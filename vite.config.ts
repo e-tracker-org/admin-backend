@@ -13,7 +13,7 @@ export default defineConfig({
       },
     }),
   ],
-  base: "/",
+  base: "/", 
   build: {
     outDir: "dist",
     emptyOutDir: true,
@@ -21,16 +21,16 @@ export default defineConfig({
       output: {
         assetFileNames: "assets/[name].[hash].[ext]",
         chunkFileNames: "assets/[name].[hash].js",
-        entryFileNames: "assets/[name].[hash].js"
-      }
-    }
+        entryFileNames: "assets/[name].[hash].js",
+      },
+    },
   },
   server: {
     port: 3000,
-    strictPort: true
+    strictPort: true,
   },
   preview: {
     port: 3000,
-    strictPort: true
-  }
+    strictPort: true,
+  },
 });
